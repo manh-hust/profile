@@ -5,7 +5,7 @@ main {
     position: relative;
 }
 
-.display {
+/* .display {
     position: absolute;
     top: 70px;
     background-color: #ccc;
@@ -46,7 +46,7 @@ main {
 .checkdisplay-2:checked ~ .main {
     background: linear-gradient(to right bottom, #cfe8ec, #18d622);
 
-}
+} */
 
 /* phan avt */
 .intro {
@@ -98,11 +98,10 @@ main {
 }
 
 .intro-user__name-ctu-img {
-    position: absolute;
-    top: 10px;
-    right: 2rem;
+    margin-left: 16px;
+    margin-top: 12px;
     width: 60px;
-    border-radius: 1rem;
+    border-radius: 4px;
     box-shadow: 1px 5px 10px rgb(0, 0, 0, 0.3);
 }
 
@@ -309,101 +308,101 @@ main {
     
 }
 
-.checkbox-item1,.checkbox-item2,.checkbox-item3,.checkbox-item4 {
-    display: none;
-}
+    /* .checkbox-item1,.checkbox-item2,.checkbox-item3,.checkbox-item4 {
+        display: none;
+    }
 
-/* check-ban than */
-.self {
-  
-    display: block;
-   
-}
-
-.checkbox-item1:checked ~ .self{
-    display: block;
-}
-
-.checkbox-item1:checked ~ .Education{
-    display: none;
-}
-
-.checkbox-item1:checked ~ .target{
-    display: none;
-}
-
-.checkbox-item1:checked ~ .interest{
-    display: none;
-}
-
-
-
-/* check hoc van */
-.Education {
+    /* check-ban than */
+    /* .self {
     
-    display: none;
-   
-}
-
- .checkbox-item2:checked ~ .Education{
-    display: block;
-}
-
-.checkbox-item2:checked ~ .self{
-    display: none;
-}
-
-.checkbox-item2:checked ~ .target{
-    display: none;
-}
-
-.checkbox-item2:checked ~ .interest{
-    display: none;
-} 
-
-/* check muc tieu */
-
-.target {
- 
-    display: none;
+        display: block;
     
-}
-.checkbox-item3:checked ~ .target{
-    display: block;
-}
-.checkbox-item3:checked ~ .self{
-    display: none;
-}
+    }
 
-.checkbox-item3:checked ~ .Education{
-    display: none;
-}
+    .checkbox-item1:checked ~ .self{
+        display: block;
+    }
 
-.checkbox-item3:checked ~ .interest{
-    display: none;
-}
+    .checkbox-item1:checked ~ .Education{
+        display: none;
+    }
 
-/* check uu thich */
-.interest {
-   
-    display: none;
-   
-}
-.checkbox-item4:checked ~ .interest{
-    display: block;
-}
-.checkbox-item4:checked ~ .self{
-    display: none;
-}
+    .checkbox-item1:checked ~ .target{
+        display: none;
+    }
 
-.checkbox-item4:checked ~ .target{
-    display: none;
-}
+    .checkbox-item1:checked ~ .interest{
+        display: none;
+    } */ */
 
-.checkbox-item4:checked ~ .Education{
-    display: none;
-}
-/* bản thân */
+
+
+    /* check hoc van */
+    /* .Education {
+        
+        display: none;
+    
+    }
+
+    .checkbox-item2:checked ~ .Education{
+        display: block;
+    }
+
+    .checkbox-item2:checked ~ .self{
+        display: none;
+    }
+
+    .checkbox-item2:checked ~ .target{
+        display: none;
+    }
+
+    .checkbox-item2:checked ~ .interest{
+        display: none;
+    }  */
+
+    /* check muc tieu */
+
+    /* .target {
+    
+        display: none;
+        
+    }
+    .checkbox-item3:checked ~ .target{
+        display: block;
+    }
+    .checkbox-item3:checked ~ .self{
+        display: none;
+    }
+
+    .checkbox-item3:checked ~ .Education{
+        display: none;
+    }
+
+    .checkbox-item3:checked ~ .interest{
+        display: none;
+    } */
+
+    /* check uu thich */
+    /* .interest {
+    
+        display: none;
+    
+    }
+    .checkbox-item4:checked ~ .interest{
+        display: block;
+    }
+    .checkbox-item4:checked ~ .self{
+        display: none;
+    }
+
+    .checkbox-item4:checked ~ .target{
+        display: none;
+    }
+
+    .checkbox-item4:checked ~ .Education{
+        display: none;
+    } */
+    /* bản thân */
 .self {
    
     padding: 2rem;
@@ -621,27 +620,28 @@ main {
 .target {
    
     padding: 2rem;
-    height: 800px;
+    min-height: 800px;
 }
 
 .target-header {
     font-size: 3.5rem;
-    margin: unset;
-    
+    /* margin: unset; */
+    margin-top: 24px;
 }
 
 
 .target-list {
     list-style: none;
+    margin-top: 24px;
 }
 
 .target__item-head {
     font-size: 2.5rem;
     font-weight: 500;
     margin:3rem 0 0 0;
-    padding-left: -2rem;
-    position: relative;
-    left: -3rem;
+    /* padding-left: -2rem; */
+    /* position: relative;
+    left: -3rem; */
 
 }
 
@@ -727,7 +727,7 @@ main {
 .interest-header {
 
     font-size: 3.5rem;
-    margin: unset;
+    margin-top: 24px;
 }
 .interest__item-head {
     font-size: 2.5rem;
