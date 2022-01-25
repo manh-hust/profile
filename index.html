@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
    
@@ -445,47 +449,61 @@
                                            </div>
                                        </li>
                                        <li class="interest-item">
-                                           <h3 class="Education__item-head">
-                                               <lord-icon
-                                                   src="https://cdn.lordicon.com/qhgmphtg.json"
-                                                   trigger="hover"
-                                                   colors="primary:#121331,secondary:#08a88a"
-                                                   style="width:70px;height:70px">
-                                               </lord-icon>                            
-                                               Trò chơi
-                                           </h3>
-                                                   <div class="interest__play">
-                                                       <img class="interest__play-img" src="https://infovn.herokuapp.com/assets/img/lol.jpg" alt="">
-                                                       <div class="interest__play-text">
-                                                           <span class="interest__play-heading">Liên Minh Huyền Thoại</span>
-                                                           <p class="interest__play-mota">Chơi giải tri sau giờ học mệt mỏi +.+</p>
+                                           <div class="Education__item">
+                                               <div class="Education__item-head-img Education__item-head-img-c">
+                                                   <img src="./asscet/icon/note.png" alt="">                            
+                                               </div>
+                                               <h3 class="Education__item-head Education__item-head-c">
+                                                   Câu nói thay đổi cuộc đời
+                                               </h3>
+                                           </div>
+                                           <div class="container-swiper">
+                                               <div class="swiper mySwiper">
+                                                   <div class="swiper-wrapper">
+                                                       <div class="swiper-slide">
+                                                            <div class="text">
+                                                                Hạnh phúc là lựa chọn chứ không phải an bài. <br>
+                                                                Tình yêu là thứ cần nỗ lực chứ không phải cứ thế diễn ra.
+                                                            </div>
+                                                            <div class="author">- Mark Manson</div>
+                                                       </div>
+                                                       <div class="swiper-slide">
+                                                            <div class="text">
+                                                                Đừng bao giờ học để thành công, hãy học vì sự ưu tú cho bản thân mình. <br>
+                                                                Đừng chạy theo thành công , hãy theo đuổi sự ưu tú. Khi đó, thành công sẽ theo đuổi bạn
+                                                            </div>
+                                                            <div class="author">- Trích phim "3 chàng ngốc"</div>
+                                                       </div>
+                                                       <div class="swiper-slide">
+                                                            <div class="text">
+                                                                Hãy yêu lấy sách. Vì chắc chắn trong đời, bạn sẽ gặp một cuốn sách hợp với bạn, như thể dành cho bạn, thay đổi cuộc đời bạn mãi mãi.
+                                                                Điều thú vọ là bạn sẽ chẳng bao giờ biết cuốn sách đó là cuốn nào. Vì vậy hãy kiên trì đọc sách rồi bạn sẽ tìm ra cuốn sách tuyệt vời đó.
+                                                            </div>
+                                                            <div class="author">- Robin Sharma</div>
                                                        </div>
                                                    </div>
-   
-                                                   <div class="interest__play">
-                                                       <img class="interest__play-img" src="https://media.moddb.com/images/mods/1/52/51254/1541686172-25333533.1.gif" alt="">
-                                                       <div class="interest__play-text">
-                                                           <span class="interest__play-heading">Battle-Realms</span>
-                                                           <p class="interest__play-mota">Chơi khi rảnh rỗi </p>
-                                                       </div>
-                                                   </div>                                                                  
-                                          
+                                                   <div class="swiper-pagination"></div>
+                                               </div>    
+                                           </div>
                                        </li>
                                    </ul>
-   
                                </div>
                            </div>
-   
-   
                        </div>
-
-                   
                 </div>
             </div>
-        
-
     </main>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+        });
+      </script>
+
 </body>
 </html>
-
-    <!-- <script src="./asscet/js.js"></script> -->

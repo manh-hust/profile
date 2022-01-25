@@ -492,7 +492,9 @@ main {
 .Education-list {
     list-style: none;
 }
-
+.Education__item{
+    display: flex;
+}
 .Education__item-head {
     font-size: 2.5rem;
     font-weight: 500;
@@ -502,15 +504,27 @@ main {
     left: -3rem;
 
 }
-
 .Education__item-head-img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     position: relative;
-   top: 15px;
-   margin-right: 5px;
+    top: 15px; 
+    margin-right: 5px;
+}
+.Education__item-head-img img{
+    width: 100%;
 }
 
+.Education__item-head-img-c{
+    height: 70px;
+    left: -15px;
+
+}
+.Education__item-head-c{
+    left: 6px;
+    top: 4px;
+    font-size: 2.5rem;
+}
 
 
 .Education__item-body {
@@ -803,3 +817,56 @@ main {
     margin-top: 1rem;
     color: var(--text-color);
 }
+
+.container-swiper{
+    display: flex;
+    margin: 3rem 0;
+    background-color: var(--primery);
+    height: 150px;
+    padding: 0 2rem;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.3);
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+.swiper-slide .text{
+    line-height: 20px;
+}
+.swiper-slide .author{
+    margin-top: 12px;
+    text-align: right;
+    color:#3B5999;
+}
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination{
+    bottom: -20px;
+  }
