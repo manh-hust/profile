@@ -14,17 +14,21 @@
     <link rel="stylesheet" href="./asscet/css/main.css">
     <link rel="stylesheet" href="./asscet/css/res.css">
 
-
     <link rel="icon" href="./asscet/img/fanvicon-img-removebg-preview.ico" type="img/x-icon">
     <!-- font icon -->
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+    <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- J-query -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 </head>
 <body>
    
@@ -110,53 +114,48 @@
                     <!-- Menu -->
                        <div class="col l-2 navigation">
                            <ul class="navigation__list">
-                            <div class="navigation-item " > 
-                                    <lord-icon
-                                       src="https://cdn.lordicon.com/eszyyflr.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Bản thân</span>
-                            </div>
-                              <div class="navigation-item "> 
-                              
-                                    <lord-icon
-                                       src="https://cdn.lordicon.com/wxnxiano.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Học vấn</span>
-                              
+                                <div class="navigation-item menu-self active" > 
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/eszyyflr.json"
+                                            trigger="hover"
+                                            colors="primary:#121331,secondary:#08a88a"
+                                            style="width:100%;height:100%">
+                                        </lord-icon>
+                                        <span class="navigation-item-text">Bản thân</span>
                                 </div>
+                                <div class="navigation-item menu-education "> 
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/wxnxiano.json"
+                                        trigger="hover"
+                                        colors="primary:#121331,secondary:#08a88a"
+                                        style="width:100%;height:100%">
+                                    </lord-icon>
+                                    <span class="navigation-item-text">Học vấn</span>
+                                
+                                </div>
+                                <div class="navigation-item menu-target"> 
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/iltqorsz.json"
+                                        trigger="hover"
+                                        colors="primary:#121331,secondary:#08a88a"
+                                        style="width:100%;height:100%">
+                                    </lord-icon>
+                                    <span class="navigation-item-text">Mục tiêu</span>
 
-                             <div class="navigation-item"> 
-                                   <lord-icon
-                                       src="https://cdn.lordicon.com/iltqorsz.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Mục tiêu</span>
-   
-                               </div>
-
-                              <div class="navigation-item "> 
-                                   <lord-icon
-                                       src="https://cdn.lordicon.com/rjzlnunf.json"
-                                       trigger="hover"
-                                       colors="primary:#121331,secondary:#08a88a"
-                                       style="width:100%;height:100%">
-                                   </lord-icon>
-                                   <span class="navigation-item-text">Ưa thích</span>
-                               </div>
-
+                                </div>
+                                <div class="navigation-item menu-interest "> 
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/rjzlnunf.json"
+                                        trigger="hover"
+                                        colors="primary:#121331,secondary:#08a88a"
+                                        style="width:100%;height:100%">
+                                    </lord-icon>
+                                    <span class="navigation-item-text">Ưa thích</span>
+                                </div>
                            </ul>
                        </div>
                     <!-- Main-Content     -->
                        <div class="col l-10 ">
-                          
                            <div class="information">
                                 <!-- bản thân -->
                                 <div id="self-id" class="self">
@@ -177,12 +176,36 @@
                                            <div class="row self-row">
                                                <div class="col l-6">
                                                    <div class="zoom">
-                                                       <a href="https://ongimkshp.github.io/moto_bike_intro/" class="self-item-body-link">
+                                                       <a href="https://ongimkshp.github.io/moto_bike_intro/" class="self-item-body-link" target="_blank">
                                                            <img src="./asscet/img/suzuki.jpg" alt="" class="self-item-body-img">
                                                         </a>
                                                         <span class="self-item-body-text">Suzuki</span>
                                                    </div>
-                                               </div>
+                                                </div>
+                                               <div class="col l-6">
+                                                   <div class="zoom">
+                                                    <a href="https://github.com/ongimkshp/blog_new" class="self-item-body-link" target="_blank">
+                                                        <img src="./asscet/img/quanlikhoahoc.jpg" alt="" class="self-item-body-img">
+                                                     </a>
+                                                     <span class="self-item-body-text">Quản lí khóa học(NodeJS)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-6">
+                                                    <div class="zoom">
+                                                        <a href="https://github.com/ongimkshp/quan_li_thu_vien_DB" class="self-item-body-link" target="_blank">
+                                                            <img src="./asscet/img/quanlithuvien.jpg" alt="" class="self-item-body-img">
+                                                        </a>
+                                                        <span class="self-item-body-text">Quản lí thư viện(NodeJS)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-6">
+                                                    <div class="zoom">
+                                                        <a href="https://github.com/ongimkshp/30_Shine_Demo" class="self-item-body-link" target="_blank">
+                                                            <img src="./asscet/img/30shine.jpg" alt="" class="self-item-body-img">
+                                                        </a>
+                                                        <span class="self-item-body-text">30 Shine-Demo (ReactJS)</span>
+                                                    </div>
+                                                </div>
                                            </div>
                                        </li>
                                        <li class="self-item">
@@ -190,7 +213,6 @@
                                        </li>
                                    </ul>
                                </div>
-
                                <!-- hoc van -->
                                <div id="Education-id" class="Education" >
                                    <h1 class="Education-header">Học Vấn</h1>
@@ -295,7 +317,6 @@
                                    </div>
    
                                </div>
-                               
                                <!-- Mục Tiêu -->
                                <div id="target-id" class="target">
                                    <h1 class="target-header">Mục Tiêu</h1>
@@ -380,7 +401,6 @@
                                 </ul>
    
                                </div>
-   
                                <!-- sở thích -->
                                <div id="interest-id" class="interest">
                                    <h1 class="interest-header">Ưa thích</h1>
@@ -494,7 +514,7 @@
             </div>
     </main>
 
-
+    <!-- Swiper - Slide -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -503,7 +523,8 @@
             dynamicBullets: true,
           },
         });
-      </script>
-
+    </script>
+    <!-- Handlde active item menu -->
+    <script src="./asscet/js.js"></script>
 </body>
 </html>
